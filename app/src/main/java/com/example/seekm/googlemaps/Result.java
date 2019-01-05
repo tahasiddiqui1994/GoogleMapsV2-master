@@ -50,12 +50,12 @@ public class Result extends AppCompatActivity {
 //                            JsonArray weather = (JsonArray) details.getAsJsonArray("weather");
                             JsonArray current_condition = (JsonArray) details.getAsJsonArray("current_condition");
                             //JsonArray array = (JsonArray) current_condition.get(0);
-                            JsonObject zeroElement = (JsonObject) current_condition.get(4);
-                            //JsonArray url = (JsonArray) zeroElement.getAsJsonArray("weatherIconUrl") ;
-                            //JsonObject value = (JsonObject) url.get(0);
+                            JsonObject zeroElement = (JsonObject) current_condition.get(0);
+                            JsonArray url = (JsonArray) zeroElement.getAsJsonArray("weatherIconUrl") ;
+                            JsonObject value = (JsonObject) url.get(0);
 //                            JsonObject url =  (JsonObject) weatherIconUrl.get(0);
-                            Toast.makeText(Result.this,zeroElement.toString(),Toast.LENGTH_LONG).show();
-                            System.out.println("sssssssssss" + zeroElement);
+                            Toast.makeText(Result.this,value.toString(),Toast.LENGTH_LONG).show();
+                            System.out.println("sssssssssss" + value);
                         }catch (Exception error){
 
                             Log.d(TAG, "onCompleted: " + error.getMessage() + error.getStackTrace());
