@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GoogleMaps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="api_key">AIzaSyAwCFid_0rxWOxbGfzpOelNjtFnAqHHsio</string>
+    <string name="weather_api">6c8a82848c4646c9928160406190501</string>
+</resources>
